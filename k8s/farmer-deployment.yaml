@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: farmer-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: farmer-service
+  template:
+    metadata:
+      labels:
+        app: farmer-service
+    spec:
+      containers:
+        - name: farmer-service
+          image: farmer-service:1.0
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
