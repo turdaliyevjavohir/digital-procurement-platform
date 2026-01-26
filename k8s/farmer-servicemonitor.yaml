@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: farmer-service-monitor
+  labels:
+    release: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: farmer-service
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s
