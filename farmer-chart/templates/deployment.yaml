@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ .Release.Name }}
+        app: farmer-app,pod-template-hash=676b4f974d
     spec:
       containers:
         - name: farmer-service

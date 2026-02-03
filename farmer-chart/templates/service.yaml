@@ -5,7 +5,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ .Release.Name }}
+    app: farmer-app,pod-template-hash=676b4f974d
   ports:
     - name: http
       port: {{ .Values.service.port }}

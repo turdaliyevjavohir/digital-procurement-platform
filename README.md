@@ -108,3 +108,25 @@ Access the Application
 http://localhost:3000
 Access Metrics
 http://localhost:3000/metrics
+
+---
+
+## 📸 Screenshots
+
+### GitHub Repository & Documentation
+![GitHub README](screenshots/01-github-readme.png)
+
+### Kubernetes Pods Running
+![Kubernetes Pods](screenshots/02-kubernetes-pods.png)
+
+### Helm Deployment
+![Helm Release](screenshots/03-helm-release.png)
+
+### Application Running
+![Application Running](screenshots/04-app-running.png)
+
+### Prometheus Metrics Endpoint
+![Metrics Endpoint](screenshots/05-metrics-endpoint.png)
+
+### Grafana Monitoring
+![Grafana Dashboard](screenshots/06-grafana-dashboard.png)
