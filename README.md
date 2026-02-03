@@ -38,8 +38,9 @@ Each service is designed to be **independently deployable and scalable**.
 ---
 
 ## 📦 Containerisation
+
 Each microservice is containerised using **Docker**.
 
-Example:
+### Example:
 ```bash
 docker build -t farmer-service:1.0 ./farmer-service
